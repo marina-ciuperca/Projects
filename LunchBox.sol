@@ -122,7 +122,7 @@ contract LunchBox is VRFConsumerBaseV2 {
      * @param player address
      * @return meal as a string
      */
-    function house(address player) public view returns (string memory) {
+    function menu(address player) public view returns (string memory) {
         require(s_results[player] != 0, "Dice not rolled");
         require(s_results[player] != ROLL_IN_PROGRESS, "Roll in progress");
         return getMealName(s_results[player]);
