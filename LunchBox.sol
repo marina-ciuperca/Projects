@@ -7,6 +7,12 @@
 //@dev The number was increased 7x2 to provide more options and reduce the possibility to have the same
 //@dev meal 2 days in a row.
 //@dev The contract is meant to be deployed on Remix IDE
+//Before deploying the contract make sure you have a VRF Subscription ID and funded it with some Link tokens: https://vrf.chain.link/
+//How to interact with the contract:
+//1. In Remix, enter your subscription ID when deploying the contract
+//2. In Subscription Manager, add contract address to Add consumer
+//3. In Remix, enter the wallet address in rollDice field and call the function
+//4. In Remix, call menu function after couple of minutes
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
